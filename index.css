@@ -1,0 +1,309 @@
+
+
+
+.conteiner{
+	max-width: 1300px;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+
+
+.page_title{
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(7, 155, 7);
+    font-size: 40px;
+
+}
+
+.title_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#search{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+#category{
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 15px;
+}
+#category::placeholder{
+    background-color: black;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    gap: 30px;
+    padding-top: 60px;
+}
+.photo{
+    display: block;
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.h2_wrapper{
+    max-width: 280px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-family: "Gill Sans", sans-serif;
+    height: 25px;
+}
+
+
+.p_wrapper{
+
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+.p_wrapper1{
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.button_search{
+    background-color: white;
+    border: none;
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    background-color: transparent;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.header>ul{
+    transform: translate(-5%);
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    height: 30px;
+    max-width: 320px;
+}
+
+.header>ul>li>a{
+    font-family: "Gill Sans", sans-serif;
+    text-decoration: none;
+    color: rgb(7, 155, 7);
+    font-weight: 700;
+    font-size: 22px;
+    color: #3d3d3d;
+}
+
+.header>ul>li:hover{
+    border-bottom: 3px solid rgb(7, 155, 7);;
+}
+
+.product_cart{
+    position: relative;
+    background-color: white;
+    border: none;
+    padding: 5px 8px 5px 8px;
+}
+
+.caunt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Gill Sans", sans-serif;
+    background-color:rgb(7, 155, 7); ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.caunt_products{
+    color: white;
+}
+
+.inner_select{
+    position: relative;
+}
+
+.caunt_products{
+    position: absolute;
+    top: -15px;
+    right: -8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_search{
+    position: relative;
+}
+
+.cards_products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33% - 25px);
+}
+
+.photo_wrapper{
+    height: 280px;
+}
+.cart_photo{
+    display: block;
+    max-width: 200px;
+}
+
+
+
+.link_header_wrapper{
+    display: flex;
+    gap: 10px;
+}
+.register_btn{
+    width: 100px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Gill Sans", sans-serif;
+    background-color:rgb(7, 155, 7); ;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.text_inform_wrapper{
+    font-family: "Gill Sans", sans-serif;
+    text-decoration: none;
+    color: rgb(7, 155, 7);
+    font-weight: 700;
+    font-size: 22px;
+    color: #3d3d3d;
+}
+
+.btn_add{
+    width: 100px;
+    font-family: "Gill Sans", sans-serif;
+    background-color: rgb(7, 155, 7);
+    font-size: 15px;
+    color: black;
+    border: none;
+    padding: 5px 3px 5px 3px;
+    border-radius: 15px;
+}
+.inform_wrapper{
+
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+.cart_products{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.cart_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.total_summ{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+#notification{
+    transition: opacity 0.5s ease-in-out;
+}
+
+#notification.visible{
+    opacity: 1;
+    position: fixed;
+    top: 8.8%;
+    right: 15.8%;
+    background-color:  rgb(7, 155, 7);
+    height: 40px;
+    border-radius: 15px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    padding: 0px 7px 0px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+#notification.hiden{
+    display: none;
+}
+
+.progres_circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: spin 3s linear forwards;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
